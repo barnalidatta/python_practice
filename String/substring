@@ -1,0 +1,7 @@
+str = "Chocolate"
+substr = "cola"
+
+if substr in str:
+    print("yes")
+else:
+    print("no")
