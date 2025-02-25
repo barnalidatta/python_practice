@@ -1,3 +1,23 @@
 {
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Pytest",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "Pytest"
+    ],
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "cody.autocomplete.experimental.ollamaOptions": {
+        
+        "url": "http://localhost:11434",
+        "model": "deepseek-coder:1.3b"
+    }
+    
 }

@@ -1,0 +1,20 @@
+The provided Python code defines a simple calculator using the fire library, which enables command-line interfaces (CLI). 
+The code creates a class called ArithmeticProcessor with a method named calculate_double that takes a value and returns its double.
+In the last few lines, the code checks if it is being run directly (__name__ == '__main__'), and if so, 
+it uses the fire.Fire() function to turn the ArithmeticProcessor class into a CLI. This means that when the code is 
+executed from the command line, users can pass arguments to perform calculations.
+
+%cat calculator.py
+import fire
+
+class ArithmeticProcessor(object):
+
+    def calculate_double(self, value):
+        return 2 * value
+
+if __name__ == '__main__':
+    fire.Fire(ArithmeticProcessor)
+
+    
+%%bash
+./run -p calculator.py calculate_double 15

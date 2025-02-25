@@ -1,0 +1,11 @@
+clear() Removes all items from the dictionary
+copy() Returns a shallow copy of the dictionary
+fromkeys() Creates a dictionary from the given sequence
+get() Returns the value for the given key
+items() Return the list with all dictionary keys with values
+keys() Returns a view object that displays a list of all the keys in the dictionary in order of insertion
+pop() Returns and removes the element with the given key
+popitem() Returns and removes the key-value pair from the dictionary
+setdefault() Returns the value of a key if the key is in the dictionary else inserts the key with a value to the dictionary
+values()vReturns a view object containing all dictionary values, which can be accessed and iterated through efficiently
+update() Updates the dictionary with the elements from another dictionary or an iterable of key-value pairs. With this method, you can include new data or merge it with existing dictionary entries
