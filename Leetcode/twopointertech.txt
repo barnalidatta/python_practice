@@ -1,0 +1,13 @@
+1. sorted array
+2. left pointer at start, right pointer at end
+3. calculate sum of left and right
+4. if sum is greater than target, then decrement the right pointer( pointing second last)
+5. if sum is less than target, then increment the left pointer.
+6. move left and right to get the exact target.
+
+3sum
+1. two pointers plus additional fix pointer (loop variable) 
+2. fix pointer (loop variable,i )is initially set on first element.
+3. when looping for first variable, apply two sum on rest of array.
+
+

@@ -8,12 +8,13 @@ def fibonacci(num:int):
     else:
         for i in range(2,num):
         
-            print(f"here{i} num1 = {num1}, num2 = {num2}")
+            # print(f"here{i} num1 = {num1}, num2 = {num2}")
             tmp = num1 + num2
             num1 = num2
             num2 = tmp
-            print(f"{tmp}")
-        #return tmp
+            #print(f"{tmp}")
+        return tmp
 
 #print(fibonacci(2))
-fibonacci(10)
+n=5
+print(f" {n}th fibonacci {fibonacci(n)}")
