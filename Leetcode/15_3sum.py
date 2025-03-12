@@ -1,3 +1,5 @@
+# Two pointer method plus third loop variable
+
 def threeSum(nums):
         """
         3 number adds to 0

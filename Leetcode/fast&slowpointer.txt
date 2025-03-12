@@ -1,4 +1,0 @@
-https://leetcode.com/discuss/study-guide/1688903/solved-all-two-pointers-problems-in-100-days
-
-1. fast and slow pointer is two pointer method with different speed
-2. Used for linked list
