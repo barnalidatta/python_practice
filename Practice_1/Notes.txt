@@ -1,0 +1,20 @@
+empty tuple --> tup = ()
+create empty set --> numbers = set()
+stack and list are same
+
+Sliding Window -> 
+    both pointer(left and right) startes from index 0.
+
+    1. The Variable-Size Window ->
+            This is the style where the window grows and shrinks like an accordion based on a condition (e.g., "Find the shortest substring with no repeating characters").
+            The Loop Structure: A for loop moves the right pointer forward every turn, and an inner while loop manually moves the left pointer to shrink the window when needed.
+            
+    2. The Fixed-Size Window ->
+            This is the style where the window size never changes (e.g., "Find the maximum sum of exactly 3 consecutive numbers").
+            Because the size is locked, you don't need an inner while loop to shrink it. Instead, once your window reaches the desired size, every time the right pointer moves forward by one, the left pointer must also move forward by one to keep the window size identical.
+            The Loop Structure: A single for loop where both pointers move perfectly in sync after the initial window is built.
+
+
+BFS uses dequeue
+DFS uses recursion
+topk -> heap+hash

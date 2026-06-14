@@ -1,0 +1,29 @@
+# simulation_devices.yaml
+spec: "1.0"
+resources:
+  # 1. Our Simulated Multimeter
+  ASRL1::INSTR:
+    interface: serial
+    protocols:
+      scpi:
+        string_terminator: "\n"
+    dialogues:
+      - request: "*IDN?"
+        response: "HomeLab Corp, Digital Multimeter v1.0"
+      - request: "MEASure:VOLTage:DC?"
+        # The simulated instrument will return 3.314 Volts
+        response: "3.314"
+
+  # 2. Our Simulated Programmable Power Supply
+  USB0::0x1234::0x5678::MY12345678::0::INSTR:
+    interface: usb
+    protocols:
+      scpi:
+        string_terminator: "\n"
+    dialogues:
+      - request: "*IDN?"
+        response: "HomeLab Corp, Programmable Power Supply v2.3"
+      - request: "OUTPUT:STATE?"
+        response: "OFF"
+      - request: "OUTPUT:STATE ON"
+        response: ""

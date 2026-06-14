@@ -1,0 +1,18 @@
+# simulation_devices.yaml
+spec: "1.0"
+
+devices:
+  virtual_dmm:
+    eom:
+      ASRL INSTR:
+        q: "\n"
+        r: "\n"
+    dialogues:
+      - q: "*IDN?"
+        r: "Rigol,DM3000-Sim,001,v1.0"
+      - q: "MEASure:VOLTage:DC?"
+        r: "3.95"
+
+resources:
+  ASRL1::INSTR:
+    device: virtual_dmm
